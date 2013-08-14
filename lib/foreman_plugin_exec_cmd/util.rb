@@ -1,10 +1,12 @@
 require 'open3'
 
 module ForemanPluginExecCmd::Util
+  # This class extends the Host class. We will apply execution only on managed hosts.
   extend ActiveSupport::Concern
   included do
     class_eval do
       def exec_cmd_object
+        return if not self.respond_to?(:managed) or not self.managed
         if not params or not params['action']
           message = "Host no action"
         elsif params['action'] == 'built'
