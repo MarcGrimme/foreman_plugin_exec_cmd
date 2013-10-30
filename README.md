@@ -72,9 +72,7 @@ The method exec\_cmd\_object method.
 
 # Copyright
 
-[Update copyright accordingly.  GPLv3 is used as Foreman itself is.]
-
-Copyright (c) 2012-2013 Red Hat Inc.
+Copyright (c) 2012-2013 ATIX AG.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
