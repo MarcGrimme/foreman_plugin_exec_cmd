@@ -14,7 +14,7 @@ Foreman plugin that just executes a given command.
 
 ### Use Case
 
-![Call foreman_plugin_exec_cmd](../../raw/master/documentation/Call foreman_plugin_exec_cmd.jpg "Usecase how foreman_plugin_exec_cmd is called")
+![Call foreman_plugin_exec_cmd](documentation/Call foreman_plugin_exec_cmd.jpg "Usecase how foreman_plugin_exec_cmd is called")
 
 ### Class Diagram
 
