@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_6MsrAEFoEeOFkLzJ0sRxfA" name="foreman_plugin_exec_cmd">
+  <ownedComment xmi:id="_6MsrAUFoEeOFkLzJ0sRxfA" body="after_create&#xA;after_build&#xA;before_provision&#xA;" annotatedElement="_6MsrDUFoEeOFkLzJ0sRxfA">
+    <eAnnotations xmi:id="_6MsrAkFoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsrA0FoEeOFkLzJ0sRxfA" key="uuid" value="_kyAiMCNzEDGTwrrKHP28xQ"/>
+    </eAnnotations>
+  </ownedComment>
+  <packageImport xmi:id="_6MsrBEFoEeOFkLzJ0sRxfA">
+    <eAnnotations xmi:id="_6MsrBUFoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsrBkFoEeOFkLzJ0sRxfA" key="uuid" value="_PJmBkCNuEDGlaJTZcof-Dw"/>
+    </eAnnotations>
+    <importedPackage href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#/"/>
+  </packageImport>
+  <packageImport xmi:id="_6MsrB0FoEeOFkLzJ0sRxfA">
+    <eAnnotations xmi:id="_6MsrCEFoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsrCUFoEeOFkLzJ0sRxfA" key="uuid" value="_PJmBkSNuEDGlaJTZcof-Dw"/>
+    </eAnnotations>
+    <importedPackage href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#/"/>
+  </packageImport>
+  <packagedElement xsi:type="uml:Actor" xmi:id="_6MsrCkFoEeOFkLzJ0sRxfA" name="Foreman Process">
+    <eAnnotations xmi:id="_6MsrC0FoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsrDEFoEeOFkLzJ0sRxfA" key="uuid" value="_Bn16gCNzEDGTwrrKHP28xQ"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_6MsrDUFoEeOFkLzJ0sRxfA" name="foreman_plugin_exec_cmd.exec_cmd_object">
+    <eAnnotations xmi:id="_6MsrDkFoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsrD0FoEeOFkLzJ0sRxfA" key="uuid" value="_ENGFgCNzEDGTwrrKHP28xQ"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_6MsrEEFoEeOFkLzJ0sRxfA" name="Foreman Process_foreman_plugin_exec_cmd.exec_cmd_object" memberEnd="_6MsrGEFoEeOFkLzJ0sRxfA _6MsrE0FoEeOFkLzJ0sRxfA" navigableOwnedEnd="_6MsrE0FoEeOFkLzJ0sRxfA _6MsrGEFoEeOFkLzJ0sRxfA">
+    <eAnnotations xmi:id="_6MsrEUFoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsrEkFoEeOFkLzJ0sRxfA" key="uuid" value="_Pi9xkCNzEDGTwrrKHP28xQ"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_6MsrE0FoEeOFkLzJ0sRxfA" name="foreman_plugin_exec_cmd.exec_cmd_object" type="_6MsrDUFoEeOFkLzJ0sRxfA" association="_6MsrEEFoEeOFkLzJ0sRxfA">
+      <eAnnotations xmi:id="_6MsrFEFoEeOFkLzJ0sRxfA" source="genmymodel">
+        <details xmi:id="_6MsrFUFoEeOFkLzJ0sRxfA" key="uuid" value="_PizZgCNzEDGTwrrKHP28xQ"/>
+      </eAnnotations>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_6MsrFkFoEeOFkLzJ0sRxfA" value="1"/>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_6MsrF0FoEeOFkLzJ0sRxfA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_6MsrGEFoEeOFkLzJ0sRxfA" name="foreman Process" type="_6MsrCkFoEeOFkLzJ0sRxfA" association="_6MsrEEFoEeOFkLzJ0sRxfA">
+      <eAnnotations xmi:id="_6MsrGUFoEeOFkLzJ0sRxfA" source="genmymodel">
+        <details xmi:id="_6MsrGkFoEeOFkLzJ0sRxfA" key="uuid" value="_Pi9KgCNzEDGTwrrKHP28xQ"/>
+      </eAnnotations>
+      <ownedComment xmi:id="_6MsrG0FoEeOFkLzJ0sRxfA" body="Is triggered by events:&lt;div>&lt;ul>&lt;li>after_build&lt;/li>&lt;li>after_create&lt;/li>&lt;li>before_provision&lt;/li>&lt;/ul>&lt;/div>">
+        <eAnnotations xmi:id="_6MsrHEFoEeOFkLzJ0sRxfA" source="genmymodel">
+          <details xmi:id="_6MsrHUFoEeOFkLzJ0sRxfA" key="uuid" value="_6MsD8EFoEeOFkLzJ0sRxfA"/>
+          <details xmi:id="_6MsrHkFoEeOFkLzJ0sRxfA" key="is-first" value="true"/>
+        </eAnnotations>
+      </ownedComment>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_6MsrH0FoEeOFkLzJ0sRxfA" value="1"/>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_6MsrIEFoEeOFkLzJ0sRxfA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Package" xmi:id="_6MsrIUFoEeOFkLzJ0sRxfA" name="ForemanPluginExecCmd">
+    <eAnnotations xmi:id="_6MsrIkFoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsrI0FoEeOFkLzJ0sRxfA" key="uuid" value="_4kZuoCNzEDGTwrrKHP28xQ"/>
+    </eAnnotations>
+    <packagedElement xsi:type="uml:Class" xmi:id="_6MsrJEFoEeOFkLzJ0sRxfA" name="HostExtensions" clientDependency="_6MsrbEFoEeOFkLzJ0sRxfA">
+      <eAnnotations xmi:id="_6MsrJUFoEeOFkLzJ0sRxfA" source="genmymodel">
+        <details xmi:id="_6MsrJkFoEeOFkLzJ0sRxfA" key="uuid" value="_ARrjYCN0EDGTwrrKHP28xQ"/>
+      </eAnnotations>
+      <ownedOperation xmi:id="_6MsrJ0FoEeOFkLzJ0sRxfA" name="renderTemplate" isStatic="true">
+        <eAnnotations xmi:id="_6MsrKEFoEeOFkLzJ0sRxfA" source="genmymodel">
+          <details xmi:id="_6MsrKUFoEeOFkLzJ0sRxfA" key="uuid" value="_jCWtACN0EDGTwrrKHP28xQ"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_6MsrKkFoEeOFkLzJ0sRxfA" name="returnParameter" direction="return">
+          <eAnnotations xmi:id="_6MsrK0FoEeOFkLzJ0sRxfA" source="genmymodel">
+            <details xmi:id="_6MsrLEFoEeOFkLzJ0sRxfA" key="uuid" value="_jCXUECN0EDGTwrrKHP28xQ"/>
+          </eAnnotations>
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_6MsrLUFoEeOFkLzJ0sRxfA" name="after_build" isStatic="true">
+        <eAnnotations xmi:id="_6MsrLkFoEeOFkLzJ0sRxfA" source="genmymodel">
+          <details xmi:id="_6MsrL0FoEeOFkLzJ0sRxfA" key="uuid" value="_LA6QwCN1EDGTwrrKHP28xQ"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_6MsrMEFoEeOFkLzJ0sRxfA" name="returnParameter" direction="return">
+          <eAnnotations xmi:id="_6MsrMUFoEeOFkLzJ0sRxfA" source="genmymodel">
+            <details xmi:id="_6MsrMkFoEeOFkLzJ0sRxfA" key="uuid" value="_LA7e4CN1EDGTwrrKHP28xQ"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_6MsrM0FoEeOFkLzJ0sRxfA" name="after_create" isStatic="true">
+        <eAnnotations xmi:id="_6MsrNEFoEeOFkLzJ0sRxfA" source="genmymodel">
+          <details xmi:id="_6MsrNUFoEeOFkLzJ0sRxfA" key="uuid" value="_FB8X8CN1EDGTwrrKHP28xQ"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_6MsrNkFoEeOFkLzJ0sRxfA" name="returnParameter" direction="return">
+          <eAnnotations xmi:id="_6MsrN0FoEeOFkLzJ0sRxfA" source="genmymodel">
+            <details xmi:id="_6MsrOEFoEeOFkLzJ0sRxfA" key="uuid" value="_FB8_ACN1EDGTwrrKHP28xQ"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_6MsrOUFoEeOFkLzJ0sRxfA" name="before_provision" isStatic="true">
+        <eAnnotations xmi:id="_6MsrOkFoEeOFkLzJ0sRxfA" source="genmymodel">
+          <details xmi:id="_6MsrO0FoEeOFkLzJ0sRxfA" key="uuid" value="_NfGxgCN1EDGTwrrKHP28xQ"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_6MsrPEFoEeOFkLzJ0sRxfA" name="returnParameter" direction="return">
+          <eAnnotations xmi:id="_6MsrPUFoEeOFkLzJ0sRxfA" source="genmymodel">
+            <details xmi:id="_6MsrPkFoEeOFkLzJ0sRxfA" key="uuid" value="_NfJNwCN1EDGTwrrKHP28xQ"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Package" xmi:id="_6MsrP0FoEeOFkLzJ0sRxfA" name="Util">
+      <eAnnotations xmi:id="_6MsrQEFoEeOFkLzJ0sRxfA" source="genmymodel">
+        <details xmi:id="_6MsrQUFoEeOFkLzJ0sRxfA" key="uuid" value="_R1fYYCN0EDGTwrrKHP28xQ"/>
+      </eAnnotations>
+      <packagedElement xsi:type="uml:Class" xmi:id="_6MsrQkFoEeOFkLzJ0sRxfA" name="snippet" clientDependency="_6MsrY0FoEeOFkLzJ0sRxfA">
+        <eAnnotations xmi:id="_6MsrQ0FoEeOFkLzJ0sRxfA" source="genmymodel">
+          <details xmi:id="_6MsrREFoEeOFkLzJ0sRxfA" key="uuid" value="_XBjNkCN0EDGTwrrKHP28xQ"/>
+        </eAnnotations>
+        <ownedOperation xmi:id="_6MsrRUFoEeOFkLzJ0sRxfA" name="exec_cmd_object" isStatic="true">
+          <eAnnotations xmi:id="_6MsrRkFoEeOFkLzJ0sRxfA" source="genmymodel">
+            <details xmi:id="_6MsrR0FoEeOFkLzJ0sRxfA" key="uuid" value="_r4_WgCN0EDGTwrrKHP28xQ"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_6MsrSEFoEeOFkLzJ0sRxfA" name="returnParameter" direction="return">
+            <eAnnotations xmi:id="_6MsrSUFoEeOFkLzJ0sRxfA" source="genmymodel">
+              <details xmi:id="_6MsrSkFoEeOFkLzJ0sRxfA" key="uuid" value="_r4_9kCN0EDGTwrrKHP28xQ"/>
+            </eAnnotations>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_6MsrS0FoEeOFkLzJ0sRxfA" name="exec_cmd_as_pipe" isStatic="true">
+          <eAnnotations xmi:id="_6MsrTEFoEeOFkLzJ0sRxfA" source="genmymodel">
+            <details xmi:id="_6MsrTUFoEeOFkLzJ0sRxfA" key="uuid" value="_z4HwQCN0EDGTwrrKHP28xQ"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_6MsrTkFoEeOFkLzJ0sRxfA" name="returnParameter" direction="return">
+            <eAnnotations xmi:id="_6MsrT0FoEeOFkLzJ0sRxfA" source="genmymodel">
+              <details xmi:id="_6MsrUEFoEeOFkLzJ0sRxfA" key="uuid" value="_z4MowCN0EDGTwrrKHP28xQ"/>
+            </eAnnotations>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_6MsrUUFoEeOFkLzJ0sRxfA" name="exec_cmd" isStatic="true">
+          <eAnnotations xmi:id="_6MsrUkFoEeOFkLzJ0sRxfA" source="genmymodel">
+            <details xmi:id="_6MsrU0FoEeOFkLzJ0sRxfA" key="uuid" value="_5dNJcCN0EDGTwrrKHP28xQ"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_6MsrVEFoEeOFkLzJ0sRxfA" name="returnParameter" direction="return">
+            <eAnnotations xmi:id="_6MsrVUFoEeOFkLzJ0sRxfA" source="genmymodel">
+              <details xmi:id="_6MsrVkFoEeOFkLzJ0sRxfA" key="uuid" value="_5dOXkCN0EDGTwrrKHP28xQ"/>
+            </eAnnotations>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Package" xmi:id="_6MsrV0FoEeOFkLzJ0sRxfA" name="ActiveSupport">
+    <eAnnotations xmi:id="_6MsrWEFoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsrWUFoEeOFkLzJ0sRxfA" key="uuid" value="_EiSc8CN0EDGTwrrKHP28xQ"/>
+    </eAnnotations>
+    <packagedElement xsi:type="uml:Class" xmi:id="_6MsrWkFoEeOFkLzJ0sRxfA" name="Concern">
+      <eAnnotations xmi:id="_6MsrW0FoEeOFkLzJ0sRxfA" source="genmymodel">
+        <details xmi:id="_6MsrXEFoEeOFkLzJ0sRxfA" key="uuid" value="_LKNzMCN0EDGTwrrKHP28xQ"/>
+      </eAnnotations>
+      <generalization xmi:id="_6MsrXUFoEeOFkLzJ0sRxfA" general="_6MsrJEFoEeOFkLzJ0sRxfA">
+        <eAnnotations xmi:id="_6MsrXkFoEeOFkLzJ0sRxfA" source="genmymodel">
+          <details xmi:id="_6MsrX0FoEeOFkLzJ0sRxfA" key="uuid" value="_ObCDsCN0EDGTwrrKHP28xQ"/>
+        </eAnnotations>
+      </generalization>
+      <generalization xmi:id="_6MsrYEFoEeOFkLzJ0sRxfA" general="_6MsrQkFoEeOFkLzJ0sRxfA">
+        <eAnnotations xmi:id="_6MsrYUFoEeOFkLzJ0sRxfA" source="genmymodel">
+          <details xmi:id="_6MsrYkFoEeOFkLzJ0sRxfA" key="uuid" value="_Zg16gCN0EDGTwrrKHP28xQ"/>
+        </eAnnotations>
+      </generalization>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Dependency" xmi:id="_6MsrY0FoEeOFkLzJ0sRxfA" supplier="_6MsrJEFoEeOFkLzJ0sRxfA" client="_6MsrQkFoEeOFkLzJ0sRxfA">
+    <eAnnotations xmi:id="_6MsrZEFoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsrZUFoEeOFkLzJ0sRxfA" key="uuid" value="_d5Ma0CN0EDGTwrrKHP28xQ"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Package" xmi:id="_6MsrZkFoEeOFkLzJ0sRxfA" name="Foreman">
+    <eAnnotations xmi:id="_6MsrZ0FoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsraEFoEeOFkLzJ0sRxfA" key="uuid" value="_UjsOkCN1EDGTwrrKHP28xQ"/>
+    </eAnnotations>
+    <packagedElement xsi:type="uml:Class" xmi:id="_6MsraUFoEeOFkLzJ0sRxfA" name="Host::Managed">
+      <eAnnotations xmi:id="_6MsrakFoEeOFkLzJ0sRxfA" source="genmymodel">
+        <details xmi:id="_6Msra0FoEeOFkLzJ0sRxfA" key="uuid" value="_Vd_ToCN1EDGTwrrKHP28xQ"/>
+      </eAnnotations>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Dependency" xmi:id="_6MsrbEFoEeOFkLzJ0sRxfA" supplier="_6MsraUFoEeOFkLzJ0sRxfA" client="_6MsrJEFoEeOFkLzJ0sRxfA">
+    <eAnnotations xmi:id="_6MsrbUFoEeOFkLzJ0sRxfA" source="genmymodel">
+      <details xmi:id="_6MsrbkFoEeOFkLzJ0sRxfA" key="uuid" value="_X6kq0CN1EDGTwrrKHP28xQ"/>
+    </eAnnotations>
+  </packagedElement>
+</uml:Model>
