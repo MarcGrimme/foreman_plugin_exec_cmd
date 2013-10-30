@@ -8,6 +8,15 @@ Foreman plugin that just executes a given command.
 
 # Usage
 
+# Source Code
+
+## UML Documentation
+
+### Use Case
+
+[Call foreman_plugin_exec_cmd](../documentation/Call foreman_plugin_exec_cmd.jpg)
+
+### Class Diagram
 
 # Copyright
 
